@@ -1,0 +1,23 @@
+---
+title: "Wk 6 Practical"
+format: html
+editor: visual
+---
+
+## Week 6 Practical
+
+Part 1: Merge Conflicts
+
+1.  In your codebook repos, each person create a branch
+
+2.  Person #1 - make a change in your branch, do not merge back to main
+
+3.  Person #2 - make a change in the same file in your branch, merege back to main
+
+4.  Person \# 1 - try to merge your branch back to main. What happens? How can you fix it
+
+Part 2: Pull Conflicts
+
+1.  Both individuals - pull main repo to your local
+2.  Person #1 - make a change, commit, and push
+3.  Person #2 - make a change in the same document person #1 made a change in -- oops, you forgot to pull first -- what happens if you try and pull? How can you fix it?

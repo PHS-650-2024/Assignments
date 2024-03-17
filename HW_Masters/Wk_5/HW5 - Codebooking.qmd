@@ -1,0 +1,21 @@
+---
+title: "Homework 4"
+format: html
+editor: visual
+---
+
+1.  In your groups, make a codebook repository which will house a codebook for your final project
+
+2.  **Chapter 1:** Using your pre-registration, add details on the background of the project, some broad strokes aims, and the data that will be in your cleaned dataset
+
+3.  **Chapter 2:** Provide detailed information on constructs/variables in your mini-dataset (you can choose how you present this)
+
+4.  **Chapter 3:** Provide some descriptive information on data cleaning re: inclusion/exclusion criteria
+
+5.  In a 'scoring' folder, place a scoring script (and all other necessary files -- e.g. scoresheets) that you used to clean the data
+
+6.  Make a 'data' folder and place the raw data here. If I run your scoring script above, it should output a cleaned dataset in the 'data' folder
+
+7.  Render your codebook and publish it on GitHub pages
+
+8.  Send me the link to your repo

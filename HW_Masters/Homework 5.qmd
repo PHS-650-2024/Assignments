@@ -1,0 +1,9 @@
+---
+title: "HW 5 - Data Sharing Plan"
+format: html
+editor: visual
+---
+
+1.  Identify a project that you are working on / might work on in the future. If you are writing a training grant or submitting anything to NIH, this would be a good project to pick. If you have any projects which involve primary data collection, prioritize that over secondary data projects.
+2.  Write a [Data Sharing Plan](https://sharing.nih.gov/data-management-and-sharing-policy/planning-and-budgeting-for-data-management-and-sharing/writing-a-data-management-and-sharing-plan) for this project.
+3.  Create a branch of your personal GitHub repo and upload your completed DMS plan. Create a pull request and leave it open for me :)

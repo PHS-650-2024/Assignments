@@ -1,0 +1,62 @@
+---
+title: "HW1-KS"
+format: html
+---
+
+## Homework 1: R Refresher
+
+Start a new Quarto document in R. Title your document 'HW1-YOUR INITIALS' in the YAML header. I will refer below to R code blocks as 'Chunks' -- you should have five code chunks in your .qmd file with additional writing interspersed as noted. Feel free to use all available resources (Search, AI) as needed, with the exception of copying other students' work.
+
+Install and call the following packages in `Chunk 1`:
+
+{dplyr}
+{ggplot}
+{psych}
+
+```{r setup, echo=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, results = FALSE)
+library(dplyr)
+library(psych)
+library(ggplot2)
+```
+
+Below the first chunk, write your name and a quick 1-2 sentence introduction about yourself.
+
+In  `Chunk 2`, using the mtcars dataset, save the mean miles per gallon (mpg) from all of the cars as an object and call it `mean_mpg`.
+
+```{r}
+mean(mtcars$mpg)
+
+```
+
+Now try to put that number in the following sentence using the inline notation \``` r mean_mpg` ``:
+
+The mean miles per gallon for cars in the mtcars dataset is:
+
+In `Chunk 3`, write code that will count the number of cars in the dataset that get \>30 miles per gallon and return that number below the chunk
+
+
+```{r}
+as.numeric (mtcars |> 
+  filter(mpg > 30) |> 
+  count())
+```
+Write a one sentence summary describing the proportion of cars in the dataset that get gas milage >30mph 
+
+In `Chunk 4`, calculate the pearson correlation between miles per galon and number of cylanders of the cars in the database and output this below the chunk: 
+
+```{r}
+cor(mtcars$mpg, mtcars$cyl, method = 'pearson')
+```
+
+In `Chunk 5`, modify the following code to depict a graph of the association between miles per gallon and cylanders in the mtcars data: 
+```{r, echo = TRUE, results = 'hide'}
+data(iris)
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length))+
+      geom_point() + 
+      geom_smooth(method = "lm", se = FALSE)
+```
+
+Below chunk 5 - write 1 sentence descirbing the graph.
+
+Turn in BOTH a .qmd file and a .html file (rendered directly from your.qmd file) in your github folder, titled as 'lastname_first_name.HW1'. 
